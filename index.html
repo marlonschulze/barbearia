@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <title>Barbearia Realeza</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <i class="bx bx-cut"></i> Barbearia Realeza
+      </h1>
+
+      <div class="menu" id="menu" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#agendamento">Agendar</a></li>
+          <li><a href="#contacts">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="faixa-lateral"></div>
+    <!--section hero-->
+    <section class="hero" id="hero">
+      
+      <i class='bx bx-scissors icone-fundo'></i>
+      <div class="container-hero">
+        <p class="frase-impacto">Barbearia moderna, alma clássica</p>
+        <h1 class="titulo-hero">Sua identidade começa no corte</h1>
+        <h2 class="subtitulo-hero">
+          <span id="texto-dinamico"></span>
+        </h2>
+        <a href="#agendamento" class="btn-hero">
+          <i class='bx bxs-cut'></i> Agendar Corte
+        </a>
+      </div>
+    </section>
+
+    <!--section about-->
+    <section class="sobre" id="sobre">
+      <div class="container-sobre">
+        <div class="textos-sobre"> 
+          <h2>Sobre a Barbearia Realeza</h2>
+          <p>Na <span class="destaque-sobre">Barbearia Realeza</span>, cada corte é mais do que um serviço — é uma experiência. Unimos tradição e modernidade para entregar não apenas estilo, mas também confiança e atitude.
+
+            Com uma equipe especializada e apaixonada pelo que faz, oferecemos um ambiente acolhedor, onde o cuidado com cada detalhe faz toda a diferença.
+
+            Aqui, o cliente não é apenas mais um: é tratado como rei. Do corte clássico ao freestyle, passando pelo degradê e barba na toalha quente, tudo é feito com precisão, atenção e aquele toque de respeito que só uma barbearia de verdade sabe oferecer.
+
+            <strong class="destaque-sobre">Sinta-se em casa. Sinta-se Realeza.</strong></p>
+          <ul class="diferenciais">
+            <li><i class='bx bx-check bx-flashing'></i> Atendimento com horário marcado</li>
+            <li><i class='bx bx-check bx-flashing'></i> Cortes modernos e clássicos</li>
+            <li><i class='bx bx-check bx-flashing'></i> Barbearia com ambiente climatizado</li>
+            <li><i class='bx bx-check bx-flashing'></i> Atendemos no salão ou a domicílio</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--section equipe-->
+    <section class="equipe" id="equipe">
+        <div class="container-equipe">
+          <div class="textos-equipe">
+            <h2>Nossa Equipe</h2>
+            <p>Conheça os profissionais que fazem da Barbearia Realeza um símbolo de estilo, técnica e confiança</p>
+          </div>
+
+          <div class="cards-equipe">
+            <div class="card-profissional">
+              <img src="assets/img/barbeiro-barbearia.webp" alt="Barbeiro João da Silva" class="foto-barbeiro" loading="lazy">
+              <h3>João da Silva</h3>
+              <p>Especialista em <span class="especialidade">freestyle</span> e <span class="especialidade">degradê</span></p>
+              <span><span id="anos-experiencia">+0</span> anos de experência</span>
+              <div class="avaliacao">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+        <div class="certificados">
+          <h3>Certificados Profissionais</h3>
+          <div class="galeria-certificados">
+            <img src="assets/img/certificado-barbearia.jpg" alt="Certificado 1" class="certificado" data-img="assets/img/certificado-barbearia.jpg" loading="lazy">
+            <img src="assets/img/certificado-barbearia.jpg" alt="Certificado 2" class="certificado" data-img="assets/img/certificado-barbearia.jpg" loading="lazy">
+            <img src="assets/img/certificado-barbearia.jpg" alt="Certificado 3" class="certificado" data-img="assets/img/certificado-barbearia.jpg" loading="lazy">
+          </div>
+        </div>
+        <div class="modal" id="modal-certificado">
+          <span class="fechar">&times;</span>
+          <img class="modal-conteudo" id="img-certificado" loading="lazy">
+        </div>
+    </section>
+
+    <!--section serviços-->
+    <section class="servicos" id="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="slider-container">
+        <button class="btn-prev" aria-label="Anterior">&lt;</button>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <div class="card-servico">
+              <h3>Social</h3>
+              <p>Corte clássico para todas as ocasiões</p>
+              <span>R$ 30,00</span>
+            </div>
+            <div class="card-servico">
+              <h3>Degradê</h3>
+              <p>Transição suave, moderno e estiloso</p>
+              <span>R$ 45,00</span>
+            </div>
+            <div class="card-servico">
+              <h3>Navalhado</h3>
+              <p>Design com navalha para detalhes precisos</p>
+              <span>R$ 50,00</span>
+            </div>
+            <div class="card-servico">
+              <h3>Barba</h3>
+              <p>Modelagem e cuidado com a barba</p>
+              <span>R$ 25,00</span>
+            </div>
+            <div class="card-servico">
+              <h3>Sobrancelha</h3>
+              <p>Design e alinhamento profissional</p>
+              <span>R$ 20,00</span>
+            </div>
+            <div class="card-servico">
+              <h3>Pezinho</h3>
+              <p>Ajuste e acabamento dos fios do pescoço</p>
+              <span>R$ 15,00</span>
+            </div>
+            <div class="card-servico">
+              <h3>Freestyle</h3>
+              <p>Estilo livre com navalha e criatividade</p>
+              <span>R$ 55,00</span>
+            </div>
+            <div class="card-servico">
+              <h3>Nevou</h3>
+              <p>Corte moderno com descolorização</p>
+              <span>R$ 50,00</span>
+            </div>
+            <div class="card-servico">
+              <h3>Pigmentação</h3>
+              <p>Realce a cor natural do cabelo</p>
+              <span>R$ 40,00</span>
+            </div>
+          </div>
+        </div>
+        <button class="btn-next" aria-label="Próximo">&gt;</button>
+      </div>
+    </section>
+
+    <!--section galeria-->
+    <section class="galeria" id="galeria">
+      <div class="container-galeria">
+        <h2>Nosso Espaço</h2>
+        <p>Veja como é o ambiente onde você será atendido com conforto e estilo</p>
+        <div class="grid-galeria">
+          <div class="img-galeria">
+            <img src="assets/img/exterior-barbearia-galeria.jpg" alt="Exterior Barbearia">
+          </div>
+          <div class="img-galeria">
+            <img src="assets/img/maquinas-galeria.jpg" alt="Máquinas Barbearia">
+          </div>
+          <div class="img-galeria">
+            <img src="assets/img/interior-galeria-barbearia.jpg" alt="Interior Barbearia">
+          </div>
+          <div class="img-galeria">
+            <img src="assets/img/produtos-galeria.jpg" alt="Produtos">
+          </div>
+
+        </div>        
+      </div>
+
+    </section>
+    
+    <!--section agendamentos-->
+    <section class="agendamento" id="agendamento">
+      <div class="container-agendamento">
+        <h2>Agende seu horário</h2>
+        <p>Escolha a data, horário e o tipo de corte. <br>
+        Te esperamos!</p>
+
+        <form class="form-agendamentos" id="form-agendamentos">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="date" name="data" required>
+          <input type="time" name="horario" required>
+
+          <select name="corte" required>
+            <option value="">Escolha seu corte</option>
+            <option value="Social">Social</option>
+            <option value="Degrade">Degradê</option>
+            <option value="Navalhado">Navalhado</option>
+            <option value="Barba">Barba</option>
+            <option value="Sobrancelha">Sobrancelha</option>
+            <option value="Pezinho">Pezinho</option>
+            <option value="Freestyle + 
+            Corte">Freestyle + Corte</option>
+            <option value="Nevou + Corte">Nevou + Corte</option>
+            <option value="Pigmentação + Corte">Pigmentação + Corte</option>
+          </select> 
+          <button type="submit" class="btn-agendar">Agendar Agora</button>
+        </form>
+      </div>
+    </section>
+
+    <!--section contatos-->
+    <section class="contatos" id="contacts">
+      <div class="container-contatos">
+        <h2>Entre em contato!</h2>
+        <ul>
+          <li><i class='bx bx-map bx-flashing'></i> Rua Exemplo, 123 – Centro</li>
+          <li><i class='bx bx-phone bx-flashing'></i> <a href="tel:5581999999999">(81) 99999-9999</a></li>
+          <li><i class='bx bxl-whatsapp bx-flashing'></i> <a href="https://wa.me/5581999999999" target="_blank">WhatsApp</a></li>
+          <li><i class='bx bx-time bx-flashing'></i> Seg a Sáb: 9h às 19h</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="container-footer">
+        <p class="direitos-p">© 2025 Barbearia Realeza. Todos os direitos reservados.</p>
+        <p>Desenvolvido por </p><a href="https://marlonschulze.github.io/DevFreela/" target="_blank" class="logo-footer" aria-label="DevFreela - Desenvolvedor">
+          <img src="assets/img/devfreela logo.png" alt="DevFreela" loading="lazy">
+        </a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
