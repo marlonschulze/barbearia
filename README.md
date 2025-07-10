@@ -3,7 +3,7 @@
 Landing Page profissional e responsiva desenvolvida para a **barbearia fictícia**, com foco em visual moderno, animações suaves e experiência do usuário otimizada.
 
 ## 🔗 Acesse o projeto
-[👉 Clique aqui para ver o site publicado](https://seu-usuario.github.io/barbearia-realeza/)
+[👉 Clique aqui para ver o site publicado]([https://marlonschulze.github.io/barbearia/)
 
 ## ✂️ Funcionalidades
 
