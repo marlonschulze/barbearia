@@ -23,6 +23,12 @@ Landing Page profissional e responsiva desenvolvida para a **barbearia fictícia
 - **JavaScript Puro (Vanilla JS)**
 - **Boxicons**
 - **Google Fonts**
+
+
+## Imagens
+
+- **Unsplash**: gratuito
+
   
 ## 📱 Responsivo
 
